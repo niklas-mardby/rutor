@@ -20,15 +20,15 @@ main {
 	grid-template-areas:
 		"a a c"
 		"b b c";
-}
 
-div {
-	border: 2px solid darkgreen;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 2rem;
-	grid-column: 1 / 4;
+	div {
+		border: 2px solid darkgreen;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		grid-column: 1 / 4;
+	}
 }
 
 #a {
