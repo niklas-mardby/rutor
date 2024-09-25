@@ -1,15 +1,44 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: blanchedalmond;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0px;
 }
 
 main {
+	min-height: 100vh;
 	border: 2px solid limegreen;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: 200px 200px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 200px auto 100px;
 	gap: 10px;
+	grid-template-areas:
+		"a a c"
+		"b b c";
 }
 
 div {
 	border: 2px solid darkgreen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	grid-column: 1 / 4;
+}
+
+#a {
+	grid-area: a;
+}
+
+#b {
+	grid-area: b;
+}
+
+#c {
+	grid-area: c;
 }
